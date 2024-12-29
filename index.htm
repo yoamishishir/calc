@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+</head>
+<body>
+
+<section id="mainContainer">
+
+    <div id="calDisplayArea">
+        <p id="calTitle"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838713.png" alt="Logo"><span>sSa.dev_</span></p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1076/1076337.png" alt="i" id="infoBtn">
+        <div id="infoContainer">
+            <ul id="infoWrap">
+                <li><strong>%</strong> Button not available right now.</li>
+                <li>Don't click . button multiple time it's a bug.</li>
+                <li><strong>/</strong> Mean divide numbers.</li>
+                <li><button id="infoClosebtn" value="close">Close</button></li>
+            </ul>
+        </div>
+        <input type="text" id="calPLayground" disabled></input>
+    </div>
+
+    <table cellspacing=0">
+
+        <tr>
+            <td colspan="2"><button class="btn btnBigsize" onclick="clearScreen()">AC</button></td>
+            <td><button class="btn" onclick="display('%')">%</button></td>
+            <td><button class="btn" onclick="display('/')">÷</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="btn" onclick="display('7')">7</button></td>
+            <td><button class="btn" onclick="display('8')">8</button></td>
+            <td><button class="btn" onclick="display('9')">9</button></td>
+            <td><button class="btn" onclick="display('*')">×</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="btn" onclick="display('4')">4</button></td>
+            <td><button class="btn" onclick="display('5')">5</button></td>
+            <td><button class="btn" onclick="display('6')">6</button></td>
+            <td><button class="btn" onclick="display('-')">-</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="btn">1</button></td>
+            <td><button class="btn" onclick="display('2')">2</button></td>
+            <td><button class="btn" onclick="display('3')">3</button></td>
+            <td><button class="btn" onclick="display('+')">+</button></td>
+        </tr>
+
+        <tr>
+            <td ><button class="btn" onclick="display('0')">0</button></td>
+            <td><button class="btn" onclick="display('.')">.</button></td>
+            <td colspan="2" ><button class="btn btnBigsize" onclick="solve()">=</button></td>
+        </tr>
+
+    </table>
+
+
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
